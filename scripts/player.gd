@@ -13,7 +13,8 @@ func _physics_process(delta):
 		if velocity.y > 500:
 			velocity.y = 500
 	
-	#should add this conditional under else clause, so it can only jump when on floor
+	#should add this conditional under else clause, so it can only jump when on 
+	#floor
 	if Input.is_action_just_pressed("jump"):
 		velocity.y = -jump_force
 	
